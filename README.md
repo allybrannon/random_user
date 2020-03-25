@@ -1,3 +1,5 @@
+Using the random user generator (https://randomuser.me/), I accessed the API to retrieve data for using in my app.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
