@@ -9,12 +9,11 @@ import "./App.css";
 
 class App extends Component {
   state = {
-    userData: [],
-    title: "Here's some random folks"
+    userData: []
   };
 
   loadData = async () => {
-    const response = await fetch("https://randomuser.me/api/?results=5");
+    const response = await fetch("https://randomuser.me/api/?results=6");
     const data = await response.json();
     return data.results;
   };
@@ -40,8 +39,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1>{title}</h1>
+        <p class="userList">Your user list is below!</p>
+        <div class="button" onClick={this.handleClick}>
+          Get More Users
+        </div>
         <ManyUsers userData={userData} />
-        <button onClick={this.handleClick}>Get More Folks</button>
       </div>
     );
   }

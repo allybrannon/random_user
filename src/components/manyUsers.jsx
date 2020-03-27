@@ -6,10 +6,10 @@ const ManyUsers = props => {
   const { userData } = props;
   return (
     <Section>
-      <Columns isCentered>
+      <Columns isMultiline>
         {userData.length > 0 ? (
           userData.map(user => (
-            <Column isSize="1/5" className="User" key={user.login.uuid}>
+            <Column isSize="1/3" className="User" key={user.login.uuid}>
               <User user={user} />
             </Column>
           ))

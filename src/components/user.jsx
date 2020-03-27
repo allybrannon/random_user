@@ -3,6 +3,7 @@ import { Card, CardImage, Image, CardContent } from "bloomer";
 
 const User = props => {
   const { user } = props;
+
   return (
     <Card>
       <CardImage>
